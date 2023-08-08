@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body>
+	<!--Slideshow-->
+	<section>
+		<img class="mySlides" src="https://media-cdn.tripadvisor.com/media/photo-s/16/ac/f2/53/la-sunsets-hard-to-beat.jpg"style="width:100%">
+        <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/1200px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg"style="width:100%">
+        <img class="mySlides" src="/home/nce/Downloads/chicago.jpg"style="width:100%">
+        <img class="mySlides" src="https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg"style="width:100%">
+        <img class="mySlides" src="https://img.delicious.com.au/iyP6Qiz5/del/2016/08/callanish-stones-isle-of-lewis-34564-2.jpg"style="width:100%">
+        <img class="mySlides" src="https://www.newzealand.com/assets/Tourism-NZ/Auckland/98618569ff/img-1536065871-6217-4403-p-10D1D0BD-B88E-AAB3-AE3F2E903EF65717-2544003__aWxvdmVrZWxseQo_CropResizeWzEyMDAsNjMwLDc1LCJqcGciXQ.jpg"style="width:100%">
+        <img class="mySlides" src="https://static.javatpoint.com/list/images/list-of-cities-in-australia2.jpg"style="width:100%">
+        <img class="mySlides" src="https://www.usnews.com/object/image/00000161-00f5-deb3-a1eb-88f5b1f50000/bc18.countries_new_zealand_crop.jpg?update-time=1516140733697&size=superhero-large"style="width:100%">
+        <img class="mySlides" src="https://a.cdn-hotels.com/gdcs/production172/d459/3af9262b-3d8b-40c6-b61d-e37ae1aa90aa.jpg"style="width:100%">
+        <img class="mySlides" src="https://www.fodors.com/wp-content/uploads/2019/12/00_BestHistoricalSitesInIreland__HERO_The-Rock-of-Cashel.jpg"style="width:100%">
+    </section>
+    <script>
+    	// Automatic Slideshow-change image every 3 seconds
+    	var myIndex=0;
+    	carousel();
+
+    	function carousel(){
+    		var i;
+    		var x=document.getElementsByClassName("mySlides");
+    		for(i=0;i<x.length;i++){
+
+    			x[i].style.display="none";
+
+    		}
+    		myIndex++;
+    		if(myIndex>x.length){myIndex=1}
+    			x[myIndex-1].style.display="block";
+    		setTimeout(carousel,3000);
+    	}
+    </script></body>
+    </html>
